@@ -1,3 +1,24 @@
+Dog Status (working title) is an app used to track walks with your dog(s). This can be useful for situations where you or your spouse need to remember when the dog(s) were let out last, and did they use the bathroom.
+
+Future feature goals will include:
+* logging in as a user (helpful for spouses, or friends that come over and let the dogs out for you)
+* adding pictures of the dog(s)
+* Sharing of walks via text message or other means
+
+## Current To-Do's (Updated 12/19/2019)
+* [ ] Build out functionality for starting a walk
+    * [ ] start time counter
+    * [ ] increment in seconds
+* [ ] Build out functionality for ending a walk
+    * [ ] log ending time
+    * [ ] log total elapsed time
+    * [ ] Post times to db
+* [ ] Set up MongoDB
+    * [ ] Set up user collection and associated attributes
+* [ ] Set up Express
+    * [ ] plan out routes
+    * [ ] implement routes
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
