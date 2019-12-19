@@ -1,26 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import WalkCounter from './WalkCounter.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="WalkContainer">
+        <div className="startWalkBtn">
+          <button className="startWalk">
+            Start Walk
+          </button>
+          <span className="walkStarted">
+            Walk started at <span className="startTime">06:30am</span>
+          </span>
+        </div>
+        <WalkCounter/>
+        <div className="walkTimer">
+          00:00m
+        </div>
+        <div className="endWalkBtn">
+          <button className="startWalk">
+            End Walk
+          </button>
+          <span className="walkStarted">
+            Walk ended at <span className="startTime">06:40am</span>
+          </span>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default App;
